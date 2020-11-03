@@ -1,0 +1,31 @@
+{
+  "name": "stand-alone-service2.0",
+  "version": "1.0.0",
+  "description": "NODE新架构调整 数据库改为Mysql 加入redis ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node index.js",
+    "test": "cross-env NODE_ENV=test node index.js",
+    "pm2": "pm2 start pm2.json --env test",
+    "productionPm2": "pm2 start pm2.json"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "js-md5": "^0.7.3",
+    "kafka-node": "^5.0.0",
+    "mosca": "^2.8.3",
+    "mqtt": "^3.0.0",
+    "mysql2": "^2.1.0",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.21.3",
+    "silly-datetime": "^0.1.2",
+    "ws": "^7.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Smallpanpan/stand-alone-model.git"
+  },
+  "author": "smallpanpan",
+  "license": "ISC"
+}
