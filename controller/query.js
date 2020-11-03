@@ -1,12 +1,9 @@
 /**
- * 具体业务实现模块：服务端响应方法类
+ * 具体业务实现模块：http 服务端响应方法类
  * @author smallpanpan
  * @date 2020/8/3
  */
-const HamburgerService = require('../service/HamburgerService');
-const HamburgerModel = new HamburgerService();
 const date = require('silly-datetime');
-const {order} = require('../db/schema');
 const config = require('../config/index.js');
 const http = require('../utils/http-utils');
 let httpClient = new http(config.httpUrl());
